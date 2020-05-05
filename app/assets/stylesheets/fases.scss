@@ -1,0 +1,41 @@
+// Place all the styles related to the Fases controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.container-fase {
+	padding: 20px;
+}
+
+.titol-repte {
+	color: #00a99d;
+}
+
+.text-repte {
+	font-size: 1.3em;
+}
+
+.repte-lletres-perdudes {
+	font-size: 1.6em;
+}
+
+.vocal {
+	color: #00a99d;
+}
+
+#input-repte-1 {
+	width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.benfet {
+	font-size: 2em;
+	font-style: italic;
+}
+
+.graella {
+	background-color: #ccc;
+	width: 10%;
+	min-height: 20px;
+}
