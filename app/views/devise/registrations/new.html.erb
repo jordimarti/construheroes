@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+    <div class="inici-sessio-container">
+      <h1 class="text-center">Registrar-se</h1>
+
+      <br/>
+      <br/>
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
+
+        <div class="form-group">
+          <%= f.text_field :first_name, autofocus: true, class: 'form-control', placeholder: "Nom" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.text_field :last_name, autofocus: true, class: 'form-control', placeholder: "Cognoms" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.email_field :email, autofocus: false, class: 'form-control', placeholder: "Correu electrònic" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: 'Contrasenya' %>
+        </div>
+
+        <div class="form-group">
+          <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', placeholder: 'Confirma la contrasenya' %>
+        </div>
+
+        <div class="form-group">
+          <%= f.submit "Registrar-se", class: "btn btn-primary btn-block btn-lg" %>
+        </div>
+      <% end %>
+
+      <div class="text-center">
+        <%= link_to "Iniciar sessió", new_session_path(resource_name) %>
+      </div>
+    </div>
+  </div>
+</div>

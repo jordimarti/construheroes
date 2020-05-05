@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-md navbar-light barra-header">
+  <div class="container">
+    <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag("logo_construheroes_blanc_negre.png", class: "logo") %>
+    <% end %>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+      </ul>
+
+      <ul class="navbar-nav">
+        
+        <% if user_signed_in? %>
+
+          <li class="nav-item dropdown">
+            <%= link_to "#", id: "navbar-dropdown", class: "nav-link dropdown-toggle", data: { target: "nav-account-dropdown", toggle: "dropdown" }, aria: { haspopup: true, expanded: false } do %>
+              <%= current_user.email %>
+            <% end %>
+            <div id="nav-account-dropdown" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-dropdown">
+              <%= link_to "Configuració", edit_user_registration_path, class: "dropdown-item" %>
+              <div class="dropdown-divider"></div>
+              <%= link_to "Sortir", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+            </div>
+          </li>
+
+        <% else %>
+          <li class="nav-item"><%= link_to "Registrar-se", new_user_registration_path, class: "nav-link menu-item" %></li>
+          <li class="nav-item"><%= link_to "Entrar", new_user_session_path, class: "nav-link menu-item" %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>
