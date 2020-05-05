@@ -24,16 +24,10 @@ class MissatgesController < ApplicationController
   # POST /missatges
   # POST /missatges.json
   def create
-    @missatge = Missatge.new(missatge_params)
-
-    respond_to do |format|
-      if @missatge.save
-        format.html { redirect_to @missatge, notice: 'Missatge was successfully created.' }
-        format.json { render :show, status: :created, location: @missatge }
-      else
-        format.html { render :new }
-        format.json { render json: @missatge.errors, status: :unprocessable_entity }
-      end
+    @missatge = Missatge.create(missatge_params)
+    if @missatge.save
+      ActionCable.server.broadcast "room_channel", user_id: @missatge.user_id, nom: current_user.first_name, contingut: @missatge.contingut
+    else
     end
   end
 
