@@ -31,7 +31,15 @@ $(document).on('turbolinks:load', function () {
 	})
 
 	// Fase 2
-	$('#prova-fase-2').click(function() {
-		$(this).hide()
-	});
+	$('.benfet2').hide()
+	$('.malfet2').hide()
+	$('.map-slice').click(function() {
+		$('.benfet2').hide()
+		$('.malfet2').show()
+	})
+	$('#map48').click(function() {
+		$('.malfet2').hide()
+		$('.benfet2').show()
+		$('img[id="map48"]').attr('src','/assets/mapa_mon_48_v2.jpg');
+  })
 })

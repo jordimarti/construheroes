@@ -1,3 +1,9 @@
+<% 
+paraula = ('a'..'z').to_a.shuffle[0,8].join
+email_inventat = paraula + '@hey.com'
+password_inventat = 'bicicleta'
+%>
+
 <div class="continguts">
   <div class="row">
     <div class="col-lg-4 col-md-6 ml-auto mr-auto">
@@ -9,6 +15,10 @@
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
           <%= devise_error_messages! %>
 
+          <%= f.hidden_field :email, :value => email_inventat %>
+          <%= f.hidden_field :password, :value => password_inventat %>
+          <%= f.hidden_field :password_confirmation, :value => password_inventat %>
+
           <div class="form-group">
             <%= f.text_field :first_name, autofocus: true, class: 'form-control', placeholder: "Nom" %>
           </div>
@@ -18,25 +28,10 @@
           </div>
 
           <div class="form-group">
-            <%= f.email_field :email, autofocus: false, class: 'form-control', placeholder: "Correu electrònic" %>
-          </div>
-
-          <div class="form-group">
-            <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: 'Contrasenya' %>
-          </div>
-
-          <div class="form-group">
-            <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', placeholder: 'Confirma la contrasenya' %>
-          </div>
-
-          <div class="form-group">
-            <%= f.submit "Registrar-se", class: "btn btn-primary btn-block btn-lg" %>
+            <%= f.submit "Entra", class: "btn btn-primary btn-block btn-lg" %>
           </div>
         <% end %>
 
-        <div class="text-center">
-          <%= link_to "Iniciar sessió", new_session_path(resource_name) %>
-        </div>
       </div>
     </div>
   </div>

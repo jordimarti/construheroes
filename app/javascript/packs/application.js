@@ -8,6 +8,7 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require("jquery")
+require("jquery-ui-dist/jquery-ui");
 require("bootstrap")
 require("@fortawesome/fontawesome-free")
 
@@ -18,3 +19,8 @@ require("@fortawesome/fontawesome-free")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+$( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  } );
