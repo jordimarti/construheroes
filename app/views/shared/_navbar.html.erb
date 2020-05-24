@@ -15,21 +15,8 @@
       <ul class="navbar-nav">
         
         <% if user_signed_in? %>
-
-          <li class="nav-item dropdown">
-            <%= link_to "#", id: "navbar-dropdown", class: "nav-link dropdown-toggle", data: { target: "nav-account-dropdown", toggle: "dropdown" }, aria: { haspopup: true, expanded: false } do %>
-              <%= current_user.email %>
-            <% end %>
-            <div id="nav-account-dropdown" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-dropdown">
-              <%= link_to "Configuració", edit_user_registration_path, class: "dropdown-item" %>
-              <div class="dropdown-divider"></div>
-              <%= link_to "Sortir", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-            </div>
-          </li>
-
-        <% else %>
-          <li class="nav-item"><%= link_to "Registrar-se", new_user_registration_path, class: "nav-link menu-item" %></li>
-          <li class="nav-item"><%= link_to "Entrar", new_user_session_path, class: "nav-link menu-item" %></li>
+          <li><%= current_user.first_name %> <%= current_user.last_name %></li>
+        <% else %> 
         <% end %>
       </ul>
     </div>

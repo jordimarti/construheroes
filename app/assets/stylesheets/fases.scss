@@ -64,3 +64,23 @@
 .slice-row {
 	clear: both;
 }
+
+
+// PUZZLE
+
+#sortable { 
+	list-style-type: none; 
+	margin: 0px; 
+	padding: 0; 
+	width: 520px; 
+}
+
+#sortable li { 
+	float: left; 
+	margin: 0px 1px 1px 0px; 
+}
+
+.puzzle-slice {
+	width: 170px;
+	height: 144px;
+}

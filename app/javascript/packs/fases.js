@@ -3,6 +3,7 @@ $(document).on('turbolinks:load', function () {
 	// Preparació
 	$('#container-fase-1').hide()
 	$('#container-fase-2').hide()
+	$('#container-fase-3').hide()
 	$('#amaga-tot').click(function() {
 		$('.container-fase').hide()
 	})
@@ -42,4 +43,8 @@ $(document).on('turbolinks:load', function () {
 		$('.benfet2').show()
 		$('img[id="map48"]').attr('src','/assets/mapa_mon_48_v2.jpg');
   })
+
+  // Fase 3
+  $( "#sortable" ).sortable();
+  $( "#sortable" ).disableSelection();
 })

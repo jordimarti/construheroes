@@ -22,6 +22,10 @@ consumer.subscriptions.create("StageChannel", {
 		  	$('#container-fase-1').hide()
     		$('#container-fase-2').show()
     		break;
+      case '3':
+        $('#container-fase-2').hide()
+        $('#container-fase-3').show()
+        break;
     	default:
     		$('.container-interactiu').html("<div>Error</div>")
     }	
