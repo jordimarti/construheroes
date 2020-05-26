@@ -1,9 +1,7 @@
 
 $(document).on('turbolinks:load', function () {
 	// Preparació
-	$('#container-fase-1').hide()
-	$('#container-fase-2').hide()
-	$('#container-fase-3').hide()
+	$('.container-fase').hide()
 	$('#amaga-tot').click(function() {
 		$('.container-fase').hide()
 	})
@@ -45,6 +43,8 @@ $(document).on('turbolinks:load', function () {
   })
 
   // Fase 3
-  $( "#sortable" ).sortable();
-  $( "#sortable" ).disableSelection();
+  
+
+  // Fase 8
+  
 })

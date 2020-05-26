@@ -26,13 +26,73 @@ body {
 	background-color: #333;
 }
 
+.continguts-registre {
+	background-color: #00a99d;
+	min-height: 800px;
+	margin-bottom: 40px;
+}
+
+.logo-intro {
+	margin-top: 50px;
+}
+
+.text-intro {
+	padding: 20px;
+}
+
+span.text-gran {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.intro-card {
+	height: 150px;
+	margin-bottom: 20px;
+	background-color: #e5cd9d;
+	border-radius: 5px;
+}
+
+.intro-card-image {
+	float: left;
+	width: 150px;
+	height: 150px;
+}
+
+.intro-card-text {
+	margin-left: 155px;
+	padding: 15px;
+}
+
+.jordi-aparellador {
+	width: 150px;
+	border-radius: 5px;
+}
+
+.edifici-aparellador {
+	width: 150px;
+	border-radius: 5px;
+}
+
+.text-intro-explicacio {
+	font-size: 1.5em;
+}
+
+.btn-aventura {
+	background-color: #418174;
+	color: #fff;
+}
+
 .barra-header {
 	background-color: #00a99d;
 	margin-bottom: 20px;
 }
 
 .logo {
-	max-width: 300px;
+	max-width: 250px;
+}
+
+.logo-portada {
+	max-width: 500px;
 }
 
 .menu-item {
@@ -73,7 +133,7 @@ body {
 
 .container-interactiu {
 	background-color: #fff;
-	height: 500px;
+	min-height: 600px;
 	margin-bottom: 40px;
 }
 

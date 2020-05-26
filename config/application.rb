@@ -16,5 +16,9 @@ module Construheroes
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
     config.autoload_paths << Rails.root.join('lib')
+
+    config.to_prepare do
+    	Devise::RegistrationsController.layout "devise"
+    end
   end
 end

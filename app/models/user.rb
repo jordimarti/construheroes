@@ -8,6 +8,9 @@ class User < ApplicationRecord
     [first_name, last_name].compact.join(' ')
   end
 
+  validates :first_name, :presence => true
+  validates :last_name, :presence => true
+
   def self.online
     ids = ActionCable.server.pubsub.redis_connection_for_subscriptions.smembers "online"
     where(id: ids)
