@@ -45,6 +45,22 @@ $(document).on('turbolinks:load', function () {
   // Fase 3
   
 
+  // Fase 4
+  $('.benfet4').hide()
+  $('.malfet4').hide()
+  $('#porquets-casa-palla').click(function() {
+		$('.benfet4').hide()
+  	$('.malfet4').show()
+  })
+  $('#porquets-casa-fusta').click(function() {
+		$('.benfet4').hide()
+  	$('.malfet4').show()
+  })
+  $('#porquets-casa-maons').click(function() {
+		$('.benfet4').show()
+  	$('.malfet4').hide()
+  })
+
   // Fase 8
   
 })
