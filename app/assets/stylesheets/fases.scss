@@ -47,6 +47,9 @@
 #selectable { list-style-type: none; margin: 0; padding: 0; width: 450px; }
 #selectable li { margin: 3px; padding: 1px; float: left; width: 100px; height: 80px; font-size: 4em; text-align: center; }
 
+
+// FASE 2 - On és l'illa de Pasqua
+
 .map-slice {
 	width: 50px;
 	height: 47px;
@@ -124,6 +127,14 @@
 	clear: both;
 }
 
+
+// FASE 5 - Estufa o manta
+
+.estufa-manta {
+	width: 150px;
+	float: left;
+}
+
 // FASE 8 - PUZZLE
 
 #sortable { 
@@ -141,4 +152,11 @@
 .puzzle-slice {
 	width: 170px;
 	height: 144px;
+}
+
+#input-repte-8 {
+	width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
