@@ -8,7 +8,7 @@ password_inventat = 'bicicleta'
 <div class="row">
   <div class="col-lg-8 col-md-6">
     <div class="logo-intro">
-      <%= image_tag("logo_construaventura.png", class: "logo-portada") %>
+      <%= image_tag("logo_euronet_online.png", class: "logo-portada") %>
 
     </div>
   </div>
@@ -17,7 +17,7 @@ password_inventat = 'bicicleta'
   <div class="col-lg-8 col-md-6">
     <div class="inici-sessio-container">
       <div class="text-intro">
-        <h1>Tenim una missió:<br/><span class="text-gran">Millorar els edificis!</span></h1>
+        <h1>Tenim una missió:<br/><span class="text-gran">Estalviar energia!</span></h1>
         <br/>
 
 
@@ -26,7 +26,7 @@ password_inventat = 'bicicleta'
             <%= image_tag("jordi_aparellador.jpg", class: "jordi-aparellador") %>
           </div>
           <div class="intro-card-text">
-            <p class="text-intro-explicacio">En Jordi és arquitecte tècnic i busca gent capaç de millorar els edificis, i així millorar el món.</p>
+            <p class="text-intro-explicacio">En Jordi és arquitecte tècnic i busca gent capaç de millorar els edificis, estalviar energia i així millorar el món.</p>
           </div>
         </div>
         <div class="intro-card">
@@ -34,7 +34,7 @@ password_inventat = 'bicicleta'
             <%= image_tag("edifici_aparellador.jpg", class: "edifici-aparellador") %>
           </div>
           <div class="intro-card-text">
-            <p class="text-intro-explicacio">Seràs capaç de superar les proves i arribar fins al seu despatx?</p>
+            <p class="text-intro-explicacio">Seràs capaç de superar les proves, arribar fins al seu despatx i formar part del seu equip?</p>
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@ password_inventat = 'bicicleta'
       <br/>
       <br/>
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-        <%= devise_error_messages! %>
+        
 
         <%= f.hidden_field :email, :value => email_inventat %>
         <%= f.hidden_field :password, :value => password_inventat %>
