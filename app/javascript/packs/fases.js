@@ -90,4 +90,49 @@ $(document).on('turbolinks:load', function () {
 	    $('.malfet8').show().delay(3000).fadeOut();
 	  }
 	})
+
+	// Fase 10
+	$('#container-tria-aventura-2').hide()
+	$('#container-tria-aventura-3').hide()
+	$('#container-tria-aventura-4').hide()
+	$('#container-tria-aventura-5').hide()
+
+	$('#llum-artificial').click(function() {
+		$('#container-tria-aventura-1').hide()
+		$('#container-tria-aventura-2').show()
+	})
+	$('#llum-natural').click(function() {
+		$('#container-tria-aventura-1').hide()
+		$('#container-tria-aventura-2').show()
+	})
+	$('#nevera-be').click(function() {
+		$('#container-tria-aventura-2').hide()
+		$('#container-tria-aventura-3').show()
+	})
+	$('#nevera-malament').click(function() {
+		$('#container-tria-aventura-2').hide()
+		$('#container-tria-aventura-3').show()
+	})
+	$('#classe-fred').click(function() {
+		$('#container-tria-aventura-3').hide()
+		$('#container-tria-aventura-4').show()
+	})
+	$('#classe-be').click(function() {
+		$('#container-tria-aventura-3').hide()
+		$('#container-tria-aventura-4').show()
+	})
+	$('#transport-cotxe').click(function() {
+		$('#container-tria-aventura-4').hide()
+		$('#container-tria-aventura-5').show()
+	})
+	$('#transport-bici').click(function() {
+		$('#container-tria-aventura-4').hide()
+		$('#container-tria-aventura-5').show()
+	})
+	$('#roba-estesa').click(function() {
+		$('#container-tria-aventura-5').hide()
+	})
+	$('#roba-assecadora').click(function() {
+		$('#container-tria-aventura-5').hide()
+	})
 })
