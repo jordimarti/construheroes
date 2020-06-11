@@ -8,5 +8,5 @@ test:
 
 production:
   adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") { "redis://redistogo:93f3f9fa0d447f572c97cfa280a31c2f@soapfish.redistogo.com:9498/" } %>
+  url: <%= ENV.fetch("REDIS_URL") { "redis://redistogo:95b3cc1ee47a1480c7808d02a9fdb150@soapfish.redistogo.com:9854/" } %>
   channel_prefix: construheroes_production
